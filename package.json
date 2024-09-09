@@ -1,19 +1,35 @@
 {
-  "name": "astro-sample-project",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/vue": "^4.5.0",
-    "astro": "^4.15.4",
-    "vue": "^3.4.38",
-    "@astrojs/check": "^0.9.3",
-    "typescript": "^5.5.4"
-  }
+    "name": "astro-sample-project",
+    "type": "module",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "astro dev",
+        "start": "astro dev",
+        "build": "astro check && astro build",
+        "preview": "astro preview",
+        "astro": "astro"
+    },
+    "dependencies": {
+        "@astrojs/check": "^0.9.3",
+        "@astrojs/sitemap": "^3.1.6",
+        "@astrojs/vue": "^4.5.0",
+        "@inkline/inkline": "^4.7.1",
+        "astro": "^4.15.4",
+        "astro-compress": "^2.3.1",
+        "astro-robots-txt": "^1.0.0",
+        "pinia": "^2.2.2",
+        "typescript": "^5.5.4",
+        "vue": "^3.4.38"
+    },
+    "devDependencies": {
+        "@inkline/config": "^1.9.1",
+        "@inkline/plugin": "^1.5.2",
+        "sass": "^1.78.0"
+    },
+    "pnpm": {
+        "overrides": {
+            "prettier": "^3.3.0"
+        }
+    },
+    "packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903"
 }

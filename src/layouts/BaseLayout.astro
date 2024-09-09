@@ -1,0 +1,31 @@
+---
+import PageHead from "./PageHead.astro";
+import HeaderBar from "./HeaderBar.vue";
+import FooterBar from "./FooterBar.vue";
+
+import "../css/variables/index.scss";
+import "@inkline/inkline/css/index.scss";
+import "@inkline/inkline/css/utilities.scss";
+import {
+    ILayout,
+    ILayoutHeader,
+    ILayoutContent,
+    ILayoutFooter,
+    IHeader,
+} from "@inkline/inkline";
+---
+
+<html lang="en">
+    <head>
+        <PageHead />
+    </head>
+    <body>
+        <ILayout>
+            <ILayoutHeader> <HeaderBar /> </ILayoutHeader>
+            <ILayoutContent>
+                <slot />
+            </ILayoutContent>
+            <ILayoutFooter> <FooterBar /> </ILayoutFooter>
+        </ILayout>
+    </body>
+</html>
